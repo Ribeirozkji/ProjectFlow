@@ -1,87 +1,73 @@
-# ProjectFlow
+Documentação do Projeto – ProjectFlow
+Visão Geral
+
+Nome do Projeto: ProjectFlow
+Descrição:
 ProjectFlow é um aplicativo web de gestão de projetos que combina linha do tempo interativa, modo foco gamificado e dashboard de produtividade. Permite criar tarefas, definir prazos e prioridades, acompanhar progresso e ganhar conquistas, tornando a organização eficiente e motivadora.
+
 Objetivo:
-Oferecer às equipes e usuários individuais uma forma prática e divertida de gerenciar projetos, organizar tarefas e acompanhar progresso de forma visual e interativa.
+Oferecer às equipes e usuários individuais uma forma prática e envolvente de gerenciar projetos, organizar tarefas e acompanhar progresso de forma visual e interativa.
 
-  Público-alvo:
+Público-alvo:
 
-Pequenas e médias equipes.
+Pequenas e médias equipes
 
-Profissionais autônomos.
+Profissionais autônomos
 
-Estudantes ou grupos que precisam controlar prazos e tarefas.
+Estudantes ou grupos que precisam controlar prazos e tarefas
 
-   Requisitos Funcionais
+Requisitos Funcionais
 
-Criação, edição e exclusão de projetos.
+Criação, edição e exclusão de projetos
 
-Criação, edição, exclusão e conclusão de tarefas.
+Criação, edição, exclusão e conclusão de tarefas
 
-Linha do tempo interativa (Gantt simplificada) mostrando tarefas e prazos.
+Linha do tempo interativa mostrando tarefas e prazos
 
-Definição de prioridades e prazos para cada tarefa.
+Definição de prioridades e prazos para cada tarefa
 
-Modo foco: exibição apenas das tarefas do dia.
+Modo foco exibindo apenas tarefas do dia
 
-Gamificação: pontos, medalhas e conquistas ao completar tarefas.
+Gamificação com pontos, medalhas e conquistas ao concluir tarefas
 
-Notificações de tarefas próximas do prazo.
+Notificações de tarefas próximas do prazo
 
-Dashboard com gráficos de progresso, estatísticas e conquistas.
-   Requisitos Não Funcionais
+Dashboard com gráficos de progresso, estatísticas e conquistas
 
-Desempenho: Carregamento rápido mesmo com 50+ tarefas.
+Requisitos Não Funcionais
 
-Segurança: Proteção de dados dos usuários (autenticação opcional).
+Desempenho rápido mesmo com muitas tarefas
 
-Compatibilidade: Web responsivo (desktop e tablets).
+Segurança dos dados dos usuários com autenticação opcional
 
-Usabilidade: Interface intuitiva, clara, com animações leves.
+Compatibilidade com desktop e tablets
 
-Persistência: Dados salvos em banco de dados (Firebase, Node.js + DB, ou LocalStorage/IndexedDB para protótipo).
+Interface intuitiva, clara e com animações leves
 
-
-
-   Fluxo do Usuário
-
-Usuário entra no app → lista de projetos.
-
-Seleciona ou cria um projeto → vê timeline com tarefas.
-
-Cria/edita tarefas → define prioridade e prazo.
-
-Ativa Modo Foco → mostra apenas tarefas do dia.
-
-Conclui tarefas → ganha pontos ou medalhas → dashboard atualizado.
-
-Dashboard → acompanha progresso e estatísticas gerais.
+Persistência dos dados em banco de dados ou armazenamento local
 
 
+Fluxo do Usuário
 
-   Diferenciais / Inovação
+O usuário acessa a lista de projetos. Pode selecionar ou criar um novo projeto e visualizar a timeline com as tarefas. É possível criar e editar tarefas, definir prioridade e prazo. Ativando o modo foco, aparecem apenas as tarefas do dia. Ao concluir tarefas, o usuário ganha pontos ou medalhas e o dashboard é atualizado com progresso e estatísticas gerais.
 
-Linha do tempo interativa: visual, intuitiva e manipulável.
 
-Modo foco gamificado: incentiva produtividade e engajamento.
+Diferenciais e Inovação
 
-Dashboard com conquistas: transforma tarefas em jogo de produtividade.
+Linha do tempo interativa, visual e manipulável
 
-Estilo moderno e responsivo: cores, animações e UX envolventes.
+Modo foco gamificado que incentiva produtividade e engajamento
 
- Próximos Passos
+Dashboard com conquistas e estatísticas, transformando tarefas em jogo
 
-Finalizar protótipo visual no Figma.
+Interface moderna, responsiva e com animações suaves
 
-Criar documento detalhado de requisitos (já iniciado).
+Próximos Passos
 
-Planejar desenvolvimento modular:
+Finalizar protótipo visual no Figma
 
-CRUD de projetos e tarefas
+Detalhar requisitos e funcionalidades adicionais
 
-Timeline interativa
+Planejar desenvolvimento modular incluindo CRUD de projetos e tarefas, timeline interativa, modo foco com gamificação e dashboard de progresso
 
-Modo foco + gamificação
-
-Dashboard de progresso
-
-Configurar ambiente de desenvolvimento (React + Tailwind / Material UI).
+Configurar ambiente de desenvolvimento com React e Tailwind ou Material UI
