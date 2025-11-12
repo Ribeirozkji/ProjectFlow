@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>ProjectFlow</title>
+  
+</head>
+<body>
+    <style>
+          body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      color: #007bff;
+    }
+    .projeto {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 20px auto;
+      width: 60%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    li {
+      list-style: none;
+      padding: 5px 0;
+    }
+    .concluida {
+      text-decoration: line-through;
+      color: #888;
+    }
+    </style>
+  <h1> ProjectFlow</h1>
+  <p>Gerencie seus projetos de forma simples e visual!</p>
+  <div id="conteudo"></div>
+
+  <script>
+    async function carregarProjetos() {
+      const res = await fetch('/api/projetos');
+      const projetos = await res.json();
+      const div = document.getElementById('conteudo');
+
+      div.innerHTML = projetos.map(p => `
+        <div class="projeto">
+          <h2>${p.nome}</h2>
+          <ul>
+            ${p.tarefas.map(t => `
+              <li class="${t.concluida ? 'concluida' : ''}">
+                ${t.titulo} - ${t.prioridade} (${t.prazo})
+              </li>`).join('')}
+          </ul>
+        </div>
+      `).join('');
+    }
+
+    carregarProjetos();
+  </script>
+</body>
+</html>
